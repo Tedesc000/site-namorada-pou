@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuide do seu amor</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -77,7 +77,7 @@
     <div id="mensagemfeliz" style="display:none; color: white; font-size: 24px; margin-top: 20px;"></div>
     <br>
     <hr>
-    <img src="/poududufeliz.png" alt="dudu" width="600" height="500" id="pouvivo" style="border-radius: 50px;">
+    <img src="poududufeliz.png" alt="dudu" width="600" height="500" id="pouvivo" style="border-radius: 50px;">
     <script>
 
         let nome = "";
@@ -170,16 +170,16 @@
 
         function verificarmorte(){
             if(dudu.vida<=50){
-                document.getElementById("pouvivo").src = "/poududu.png";
+                document.getElementById("pouvivo").src = "poududu.png";
             }
             if(dudu.felicidade >= 100){
                 document.getElementById("mensagemfeliz").innerText = `Parabéns! ${nome} está muito feliz e te ama demais!`;
                 document.getElementById("mensagemfeliz").style.display = "block";
-                document.getElementById("pouvivo").src = "/pouepietra.png";
+                document.getElementById("pouvivo").src = "pouepietra.png";
             }
             if(dudu.vida <= 0){
                 document.getElementById("morreu").innerText= `Oh não! ${nome} morreu! mas está tudo bem amor, ele te ama demais mesmo assim.`;
-                document.getElementById("pouvivo").src = "/poududumorto.png";
+                document.getElementById("pouvivo").src = "poududumorto.png";
                 document.getElementById("morreu").style.display = "block";
                 document.getElementById("mensagemfeliz").style.display = "none";
                 document.getElementById("body").style.backgroundColor = "#000";
@@ -195,4 +195,5 @@
     </script>
 </body>
 </html>
+
 
